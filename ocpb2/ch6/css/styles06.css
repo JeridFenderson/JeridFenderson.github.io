@@ -1,0 +1,76 @@
+/* Style sheet created by: Jerid Fenderson 2/14/2020 */
+
+/* Style for body specifies a background color */
+body {
+	background-color: #B8B894;
+}
+
+/* Style for the container centers the page and specifies the width */
+#container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the header specifies top margin and center aligns content */
+header {
+	margin-top: 0.2em;
+	text-align: center;
+}
+
+#gradient1 {
+	border: solid #000000;
+	height: 5em;
+	margin-bottom: 2em;
+	background: -webkit-linear-gradient(to right, #006, #9f9 25%); /*Chrome & Safari*/
+	background: -moz-linear-gradient(to right, #006, #9f9 25%); /*Firefox*/
+	background: -o-linear-gradient(to right, #006, #9f9 25%); /*Opera*/
+	background: linear-gradient(to right, #006, #9f9 25%); /*Standard Syntax*/
+}
+
+#gradient2 {
+	border: solid #000000;
+	height: 5em;
+	margin-bottom: 2em;
+	background: -webkit-linear-gradient(to left, #006, #9f9 10%); /*Chrome & Safari*/
+	background: -moz-linear-gradient(to left, #006, #9f9 10%); /*Firefox*/
+	background: -o-linear-gradient(to left, #006, #9f9 10%); /*Opera*/
+	background: linear-gradient(to left, #006, #9f9 10%); /*Standard Syntax*/
+}
+
+#gradient3 {
+	border: solid #000000;
+	height: 5em;
+	margin-bottom: 2em;
+	background: -webkit-radial-gradient(#069, #0c0, #f00); /*Chrome & Safari*/
+	background: -moz-radial-gradient(#069, #0c0, #f00); /*Firefox*/
+	background: -o-radial-gradient(#069, #0c0, #f00); /*Opera*/
+	background: radial-gradient(#069, #0c0, #f00); /*Standard Syntax*/
+}
+
+#gradient4 {
+	border: solid #000000;
+	height: 5em;
+	margin-bottom: 2em;
+	background: -webkit-repeating-radial-gradient(#069, #0c0 10%, #f00 15%); /*Chrome & Safari*/
+	background: -moz-repeating-radial-gradient(#069, #0c0 10%, #f00 15%); /*Firefox*/
+	background: -o-repeating-radial-gradient(#069, #0c0 10%, #f00 15%); /*Opera*/
+	background: repeating-radial-gradient(#069, #0c0 10%, #f00 15%); /*Standard Syntax*/
+}
+
+#gradient5 {
+	border: solid #000000;
+	height: 5em;
+	margin-bottom: 2em;
+	background: -webkit-linear-gradient(to top left, #ff0, #f60, #069, #33f); /*Chrome & Safari*/
+	background: -moz-linear-gradient(to top left, #ff0, #f60, #069, #33f); /*Firefox*/
+	background: -o-linear-gradient(to top left, #ff0, #f60, #069, #33f); /*Opera*/
+	background: linear-gradient(to top left, #ff0, #f60, #069, #33f); /*Standard Syntax*/
+}
+
+/* Style for the footer specifies font size, text alignment, and top margin */
+footer {
+	font-size: .70em;
+	text-align: center;
+	margin-top: 2em;
+}

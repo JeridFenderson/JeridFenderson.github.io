@@ -1,0 +1,42 @@
+/* Style sheet created by: Jerid Fenderson 04/24/2020*/
+
+/* Style for body specifies a background color */
+body {
+	background-color: #f8c9ff;
+}
+
+/* Style for the container element */
+#container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the header element */
+header {
+	background-color: #380040;
+	color: white;
+	text-align: center;
+	font-family: Verdana, Arial, sans-serif;
+	margin-top: 0.2em;
+	padding: 0.5%;
+}
+
+/* Style for the main element  */
+main {
+	background-color: white;
+	display: block;
+	box-shadow: 0.5em 0.5em 0.5em #380040;
+	padding: 1em;
+}
+
+ul li{
+	list-style-type: square;
+	color: blue;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}

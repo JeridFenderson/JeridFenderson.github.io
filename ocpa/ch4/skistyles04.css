@@ -1,0 +1,47 @@
+/*Jerid Fenderson was here! 10/28/2019 */
+
+body { color: #FFFFFF;  /*set text color to white*/
+	  background-color: #C9E4FF; /*set background color to light blue*/
+	  font-family: Calibri, sans-serif;/*set font to Calibri, or the generic sans-serif font*/
+}
+	 
+#outer-wrapper {	width: 90%; /*set width of "outer-wrapper" to 90%*/
+				margin: 0 auto 0 auto; /*center content within "outer-wrapper*/
+}
+				
+nav, #content, footer { background-color: #4CA6FF; /*set background color to bright blue*/
+							padding: 10px;/*add 10px of padding on all four sides of the wireframe containers*/
+}
+
+header{
+	background-color: #4ca6ff; /*set background color to bright blue*/
+	padding: 0 2% 2% 0; /*sets right and bottom padding to 2% of space*/
+}
+
+footer { font-size: 0.75em;/*reduce the font size in the footer*/
+	   text-align: center;/*center the text in the footer*/
+}
+	
+img { float: left;/*float the image to the left*/
+}
+
+.rightmargin { margin-right: 2%;/*add 2% right margin to "rightmargin"*/
+}
+
+h1, h2, h3{
+	font-family: Verdana, sans-serif; /*sets font family to Verdana or sans-serif*/
+	padding-top: 1%; /*padding of heading is 1%*/
+}
+
+li {
+	list-style-type: none; /*no bullet list*/
+	display: inline; /*moves list inline*/
+}
+
+nav{
+	background-color: #c9e4ff; /*makes background color super ligh blue*/
+}
+
+.clearfloat{
+	clear: both; /*float cleared on h1*/
+}

@@ -1,0 +1,41 @@
+/* Style sheet created by: Jerid Fenderson 3/3/2020*/
+
+/* Style for body specifies a background color */
+body {
+	background-color: #669999;
+}
+
+/* Style for the container element */
+#container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+
+/*Style for the table element*/
+table{
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+
+table, tr, th, td{
+	border-collapse: collapse;
+	border: solid 0.1em #000;
+	padding: 1em;
+}
+
+td{
+	text-align: center;
+}
+
+caption{
+	font-size: 2em;
+	padding: 1em;
+	margin-top: 1em;
+}

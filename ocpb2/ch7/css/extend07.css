@@ -1,0 +1,25 @@
+body{
+	background-color: #ff9;
+	height: 100%;
+}
+
+#example1{
+	background-color: #def;
+	column-count: 3;
+	column-gap: 20px;
+	column-rule: 4px dotted rgb(79, 185, 227);
+	padding: 2%
+}
+
+h2{
+	column-span: all;
+	text-align: center;
+}
+
+.column{
+	background-color: #fed;
+	float: left;
+	width:30%;
+	margin: 5%;
+	padding: 5% 5% 30% 5%;
+}

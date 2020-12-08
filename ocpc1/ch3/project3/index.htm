@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 3
+      Hands-on Project 3-3
+
+      Author: Jerid Fenderson
+      Date:   May 14, 2020
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 3-3</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 3-3
+      </h1>
+   </header>
+
+   <article>
+      <h2>Scouting Locations</h2>
+      <div id="results">
+          <ul>
+             <li id="item1"></li>
+             <li id="item2"></li>
+             <li id="item3"></li>
+             <li id="item4"></li>
+             <li id="item5"></li>
+          </ul>
+      </div>
+   </article>
+
+   <script>
+
+    //An array for the places I'd go to
+     let places = ['Yellow Stone', 'Mt. Rushmore', 'Rocky Mountains', 'The Grand Canyon', 'Bryce Canyon'];
+
+    //A function that adds my places to the ul within this document
+     function processPlaces(){
+      for(let i = 0; i < places.length; i++){
+        let listItem = ('item' + (i + 1));
+        document.getElementById(listItem).innerHTML = places[i];
+      }
+     }
+
+     window.addEventListener('load', processPlaces, false);
+   </script>
+</body>
+</html>

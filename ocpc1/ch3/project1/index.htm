@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 3
+      Hands-on Project 3-1
+
+      Author: Jerid Fenderson
+      Date:   May 14, 2020
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 3-1</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 3-1
+      </h1>
+   </header>
+
+   <article>
+      <h2>Lunch selections</h2>
+      <form>
+         <input type="checkbox" id="item1" value="8" />
+         <label for="item1">Fried chicken ($8.00)</label>
+         <input type="checkbox" id="item2" value="10" />
+         <label for="item2">Fried halibut ($10.00)</label>
+         <input type="checkbox" id="item3" value="8" />
+         <label for="item3">Hamburger ($8.00)</label>
+         <input type="checkbox" id="item4" value="13" />
+         <label for="item4">Grilled salmon ($13.00)</label>
+         <input type="checkbox" id="item5" value="6" />
+         <label for="item5">Side salad ($6.00)</label>
+         <input type="button" value="Submit" id="sButton" />
+      </form>
+      <div>
+         <p id="total"></p>
+      </div>
+   </article>
+
+   <script>
+      //function to add values of slected check boxes and displays total
+      function calcTotal(){
+         let itemTotal = 0;
+         const items = document.getElementsByTagName('input');
+         for(let i = 0; i < 5; i++){
+            if(items[i].checked){
+               itemTotal += (items[i].value*1);
+            }
+         }
+         document.getElementById('total').innerHTML = `Your order total is $${itemTotal}.00`;
+      }
+
+      /*adds event listener to submit button (didn't put IE8 comptability because its not supported amymore)*/
+      const submitButton = document.getElementById('sButton');
+
+      submitButton.addEventListener('click', calcTotal, false);
+   </script>
+</body>
+</html>

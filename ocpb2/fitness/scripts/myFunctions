@@ -1,0 +1,10 @@
+/* Jerid Fenderson
+3/30/20
+My Function List
+*/
+
+//Thank you alert
+
+function tyAlert(){
+	alert("Thank you for your interest in our fitness club. We'll contact you soon.");
+}

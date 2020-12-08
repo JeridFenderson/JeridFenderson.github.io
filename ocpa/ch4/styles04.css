@@ -1,0 +1,38 @@
+/*Jerid Fenderson was here! 10/28/2019*/
+
+body{
+	color: #000000;
+	background-color: #d9f1c1;
+}
+
+#outerwrapper{
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+
+header, nav, footer {
+	font-family: Calibri, Arial, sans-serif;
+}
+
+#main{
+	background-color: #f0f9e6;
+	padding: 10px;
+	font-family: Garamond, "Times New Roman", serif;
+}
+
+footer{
+	font-size: .75em;
+	text-align: center;
+}
+
+img {
+	float: left;
+}
+
+nav{
+	clear: both;
+}
+
+.addrightmargin{
+	margin: 0 2% 0 0;
+}

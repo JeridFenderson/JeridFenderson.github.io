@@ -1,0 +1,43 @@
+/* Style sheet created by: Jerid Fenderson 3/4/2020 */
+
+/* Style for the body element */
+body {
+	background: -webkit-linear-gradient(white, yellow); 
+    background: -o-linear-gradient(white, yellow); 
+    background: -moz-linear-gradient(white, yellow);
+    background: linear-gradient(white, yellow); 
+	background-attachment: fixed;
+}
+
+/* Style for the container element */
+#container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Style for the footer element */
+footer {
+	font-size: .70em;
+	text-align: center;
+}
+
+label{
+	display: block;
+	margin: 1em 1em 0 1em;
+}
+
+input{
+	margin: 0 1em 1em 1em;
+}
+
+
+form ul li{
+	list-style-type: none;
+	display: inline;
+	float: left;
+	margin-right: 1em;
+}
+
+p{
+	margin-left: 1em;
+}

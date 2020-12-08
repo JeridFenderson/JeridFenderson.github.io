@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="jeridsstyle.css">
+	<title>Where I Am</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="If you wish to contact Jerid Fenderson for personal or professional business, fill out this form.">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="jeridsscript.js"></script>
+</head>
+
+<body>
+<div id="outerwrapper">
+	<header>
+		<div class="mbox box">
+			<h1><a href="index.html">Jerid Fenderson</a></h1>
+		</div>
+		<div class="desktop box">
+			<h2>Dreamer. Philosopher. Revolutionary.</h2>
+		</div>
+	</header>
+
+	<nav>
+		<ul>
+			<li class='nav-button' id='index' onclick="location.href='index.html'">About Me</li>
+			<li class='nav-button' id='ventures' onclick="location.href='ventures.html'">Ventures</li>
+			<li class='nav-button' id='services' onclick="location.href='services.html'">Services</li>
+			<li class='nav-button' id='portfolio' onclick="location.href='portfolio.html'">Portfolio</li>
+			<li class='nav-button' id='contact' onclick="location.href='contact.html'">Contact</li>	
+		</ul>
+	</nav>
+
+	<!-- The main area is self explanatory, some people use <div> over main, as it's more universally accepted. People need to update their browsers. -->
+	<main><!--class="drop scroll"-->
+		<form id="contact-form" name="contact-form" action="mail.php" method="POST"><!--Start form-->
+			<p>I currently live around the Tampa Bay Area in Florida.</p>
+			<p>If you have a burning question that you think I can answer, please feel free to fill out the form below.</p>
+
+			<label for="fName">First Name:</label>
+			<input type="text" name="fName" id="fName" required>
+
+			<label for="lName">Last Name:</label>
+			<input type="text" name="lName" id="lName">
+
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required>
+
+			<label for="phone">Phone:</label>
+			<input type="tel" name="phone" id="phone">
+
+			<p class="topspace">I would like more information about:</p>
+			<ul class="bottomspace">
+				<li><input type="checkbox" name="past" id="past" value="past" class="chkbx">My Past Work</li>
+				<li><input type="checkbox" name="present" id="present" value="present" class="chkbx">My Current Job</li>
+				<li><input type="checkbox" name="future" id="future" value="future" class="chkbx">My Future Ventures</li>
+			</ul>
+
+			<label for="reference">Referral Source:</label>
+			<select name="reference" id="reference">
+				<option value="google">Google</option>
+				<option value="social">Social Media</option>
+				<option value="ad">Advertisement</option>
+				<option value="friend">Friend</option>
+				<option value="other">Other</option>
+			</select>
+
+			<label for="questions">Question?</label>
+			<textarea id="questions" name="questions" rows="3" cols="25" required></textarea>
+
+			<input type="submit" id="submit" value="Submit Question" class="btn">
+			<input type="reset" id="reset" value="Reset Form" class="btn">
+
+			<div class="status"></div>
+		</form>
+	</main>
+
+	<footer>
+		<div id="copyright">
+			<p>&copy; Jerid Fenderson 2020</p>
+		</div>
+		<div id="social">
+			<p>Connect with me:</p>
+			<p><a href="https://www.facebook.com/jrfenderson" target="_blank"><img src="images/facebook-square.svg" alt="Facebook logo"></a>
+			<a href="https://www.instagram.com/jeridfenderson/" target="_blank"><img src="images/instagram-square.svg" alt="Instagram logo"></a></p>
+		</div>
+	</footer>
+
+	<div class="animation-wrapper">
+        <div class="particle particle-1"></div>
+        <div class="particle particle-2"></div>
+        <div class="particle particle-3"></div>
+        <div class="particle particle-4"></div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      JavaScript 6th Edition
+      Chapter 3
+      Hands-on Project 3-4
+
+      Author: Jerid Fenderson
+      Date:   May 14, 2020
+
+      Filename: index.htm
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Hands-on Project 3-4</title>
+   <link rel="stylesheet" href="styles.css" />
+   <script src="modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Hands-on Project 3-4
+      </h1>
+   </header>
+
+   <article>
+      <div id="results">
+          <ul>
+             <li id="item1"></li>
+             <li id="item2"></li>
+             <li id="item3"></li>
+             <li id="item4"></li>
+             <li id="item5"></li>
+          </ul>
+          <p id="resultsExpl"></p>
+      </div>
+      <form>
+          <fieldset>
+            <label for="toolBox" id="placeLabel">
+              Type the name of a tool, then click Submit:
+            </label>
+            <input type="text" id="toolBox" />
+          </fieldset>
+          <fieldset>
+            <button type="button" id="button">Submit</button>
+          </fieldset>
+      </form>
+   </article>
+
+   <script>
+    //Sets global counter to 1
+     let i = 1;
+
+     //Creates an empty string named listItem
+     let listItem = '';
+
+     //Takes input of listItem and puts it on the unordered list at the next space
+     function processInput(){
+      if(i <= 5){
+        listItem = 'item' + i;
+        document.getElementById(listItem).innerHTML = document.getElementById('toolBox').value;
+        document.getElementById('toolBox').value = '';
+        i++;
+
+        //Once i is greater than five, read the code to see what it does.
+        if(i > 5){
+          document.getElementById('resultsExpl').innerHTML = 'Thanks for your suggestions';
+        }
+      }
+     }
+
+     //creates a variable for the HTML button
+     const sumbitClick = document.getElementById('button');
+     //Listens for the button to be clicked, then runs the function processInput
+     sumbitClick.addEventListener('click', processInput, false);
+   </script>
+</body>
+</html>

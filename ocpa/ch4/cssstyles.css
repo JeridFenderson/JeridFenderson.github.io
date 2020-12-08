@@ -1,0 +1,37 @@
+/*Jerid Fenderson was here! 10/28/2019*/
+
+#main{
+	width: 90%;
+	margin: 0 auto 0 auto;
+	padding: 2%;
+	background-color: #d7d7d7;
+}
+
+h1{
+	color:#cf0000;
+}
+
+p{
+	border: blue 1px solid;
+}
+
+.floatleft{
+	float: left;
+}
+
+.floatright{
+	float:right;
+}
+
+.clearfloat{
+	clear: both;
+}
+
+nav li{
+	list-style-type: none;
+	display: inline;
+}
+
+.cssterm{
+	font-weight: bold;
+}

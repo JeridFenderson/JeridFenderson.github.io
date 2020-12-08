@@ -1,0 +1,39 @@
+body{
+	background-color: #000000;
+	color: #ffffff;
+	font-family: verdana, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	background-color: #ffff00;
+	width: 80vw;
+	min-height: 150px;
+	margin: 0 auto 0 auto; /*margin shortcut, as opposed to using margin-top, etc, this margin uses top, rignt, bottom, right*/
+}
+
+nav{
+	background-color: #888888;
+	width: 80vw;
+	min-height: 40px;
+	padding: 0;
+	margin: 0 auto 0 auto;
+}
+
+main{
+	background-color:#ff6622;
+	width: 80vw;
+	min-height: 456px;
+	padding: 0;
+	margin: 0 auto 0 auto;
+
+}
+
+footer{
+	background-color:#7c0a02;
+	width: 80vw;
+	min-height: 100px;
+	padding: 0;
+	margin: 0 auto 0 auto;
+}
